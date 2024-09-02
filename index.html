@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style_2.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71yYxQ1692cVSnRsj2OkTkuuyC37AT6YJJc7KgbLB_A&s" type="image/png">
+</head>
+<body style="background-color: silver;">
+
+    <audio id="bg-music" src="bg_music.mp3" preload="auto" loop></audio>
+
+
+    <nav>
+        <ul>
+            <li>
+                PlayVerse.com 
+            </li>
+        </ul>
+        <span id="Tut" style="font-size: xx-large; margin-left: 900px;"><a href="file:///C:/Users/Om%20Enterprise/Desktop/Study/Nirma/Assignments/4th/Web%20technologies/Practical-10/Copy/Tutorial.html" style="color: white;"> How to play?</a></span>
+    </nav>
+    <script src="script_2.js"></script>
+
+    <button id="Play" onclick="Play_music()">Play</button>
+
+    <div class="gameContainer" id="gameContainer">
+
+          
+        <div class="container">
+            <div class="box bt-0 bl-0"><span class="boxText" id="box1" onclick="tick('box1')"> &nbsp; </span></div>
+            <div class="box bt-0"><span class="boxText" id="box2" onclick="tick('box2')"> &nbsp;  </span></div>
+            <div class="box bt-0 br-0"><span class="boxText" id="box3" onclick="tick('box3')"> &nbsp;  </span></div>
+            <div class="box bl-0"><span class="boxText" id="box4" onclick="tick('box4')"> &nbsp;  </span></div>
+            <div class="box"><span class="boxText" id="box5" onclick="tick('box5')"> &nbsp;  </span></div>
+            <div class="box br-0"><span class="boxText" id="box6" onclick="tick('box6')"> &nbsp;  </span></div>
+            <div class="box bl-0 bb-0"><span class="boxText" id="box7" onclick="tick('box7')"> &nbsp;  </span></div>
+            <div class="box bb-0"><span class="boxText" id="box8" onclick="tick('box8')"> &nbsp;  </span></div>
+            <div class="box bb-0 br-0"><span class="boxText" id="box9" onclick="tick('box9')"> &nbsp;  </span></div>
+        </div>
+
+        <div class="gameInfo">
+            <h1 style="color: rgb(80, 3, 80);">Welcome to game</h1>
+            <div>
+                <span class="info" id="turn_info">Turn for X</span><br>
+                <button id="reset" style="margin-left: 50px;" onclick="Clear()">reset</button>
+            </div>
+
+        </div>
+        <div class="gameImage">
+            <img src="dance.gif" alt="" id="finish_image">
+        </div>
+    </div>
+
+
+</body>
+</html>
